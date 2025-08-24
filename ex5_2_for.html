@@ -1,0 +1,23 @@
+<html>
+
+<body>
+    <script>
+        let number = Number(prompt("Enter the number: "));
+        let result = "";
+
+        let row = 0;
+        while (row < number) {
+            let col = 0;
+            while (col < row + 1) {
+                result += "* ";
+                col++;
+            }
+            result += "\n";
+            row++;
+        }
+
+        alert(result); 
+    </script>
+</body>
+
+</html>
