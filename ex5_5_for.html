@@ -1,0 +1,31 @@
+<html>
+
+<body>
+    <script>
+        let number = Number(prompt("Enter the number: "));
+        let result = "";
+        let row = 0;
+
+        for (; row < number;) {
+            let col = 0;
+
+            for (; col < row;) {
+                result += "  ";
+                col++;
+            }
+
+            col = 0;
+            for (; col < number - row;) {
+                result += "* ";
+                col++;
+            }
+
+            result += "\n";
+            row++;
+        }
+
+        alert(result);
+    </script>
+</body>
+
+</html>
