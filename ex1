@@ -1,1 +1,11 @@
-a
+<html>
+
+<body>
+    <script>
+        let num = prompt("Enter the number")
+        number = Math.floor(num / 10) % 10
+        alert(number)
+    </script>
+</body>
+
+</html>
