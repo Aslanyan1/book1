@@ -1,0 +1,22 @@
+<html>
+<body>
+    <script>
+        let number = Number(prompt("Enter the number: "));
+        let result = "";
+
+        let row = 0;
+        for(;row < number;) {
+            let col = 0;
+            for(;col < number;) {
+                result += "* ";
+                col++;
+            }
+            result += "\n";
+            row++;
+        }
+
+        alert(result); 
+        document.write("<pre>" + result + "</pre>");
+    </script>
+</body>
+</html>
