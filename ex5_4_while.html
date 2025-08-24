@@ -1,0 +1,22 @@
+<html>
+<body>
+    <script>
+        let number = Number(prompt("Enter the number: "));
+        let result = "";
+        let row = 0;
+
+        while (row < number) {
+            let col = 0;
+            while (col < number - row) {
+                result += "* ";
+                col++;
+            }
+            result += "\n"; // новая строка
+            row++;
+        }
+
+        alert(result);
+        document.write("<pre>" + result + "</pre>");
+    </script>
+</body>
+</html>
